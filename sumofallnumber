@@ -1,0 +1,13 @@
+import java.util.*;
+class  sumofallnumber{
+  public static void main(String []arg)  {
+    Scanner in = new Scanner(System.in);
+System.out.println("ENTER THE NUMBER");
+    int f= in.nextInt();
+    int c=0;;
+    for(int i=1;i<=f;i++){
+      c+=i; }
+System.out.println(c); 
+    }
+
+}
