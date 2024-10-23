@@ -1,0 +1,19 @@
+import java.util.*;
+ class palindrome {
+    public static void main(String[] args) {
+   Scanner in = new Scanner(System.in);
+  System.out.println("Enter the number");
+       int n = in.nextInt();
+       int orginalnumber = n;
+     int rev=0;
+     while(n!=0){
+        int d =n%10;
+        rev=rev*10+d;
+        n/=10;
+     }
+     if(rev==orginalnumber){
+        System.out.println("IT IS PALINDROME");
+     }
+    else
+       System.out.println("IT IS not PALINDROME");
+}}
