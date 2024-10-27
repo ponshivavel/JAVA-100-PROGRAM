@@ -8,4 +8,5 @@ public class PrintExample {
         
         int a = 5;
         String name = "Java";
-        System.out.println("The value of a is: " +
+        System.out.println("The value of a is: " +name);
+    }}
