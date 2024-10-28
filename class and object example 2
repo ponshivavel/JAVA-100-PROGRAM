@@ -1,0 +1,21 @@
+import java.util.*;
+class rectangle {
+
+    double width;
+    double height;
+
+public rectangle(double width,double height)
+{   this.width = width;
+    this.height = height;
+}
+public double calculation(){
+return width*height;
+}public double calculatePerimeter() {
+    return 2 * (width + height);}
+
+    public static void main(String[] args) {
+        rectangle obj =new rectangle(5,10);
+        System.out.println("Area: " + obj.calculation());
+        System.out.println("Perimeter: " + obj.calculatePerimeter());
+    }}
+      
