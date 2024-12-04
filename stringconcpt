@@ -1,0 +1,15 @@
+import java.util.*;
+class stringconcpt {
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the String");
+             String word = scan.nextLine();
+scan.close();
+String upper = word.toUpperCase();
+System.out.println("THE UPPERCASE"+upper);
+
+String vowels = word.replaceAll("[AEIOUaeiou]"," ");
+System.out.println("THE NON VOWELS ARE"+vowels);
+  
+}}

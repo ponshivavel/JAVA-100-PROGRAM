@@ -1,0 +1,52 @@
+import java.util.Scanner;
+ class BankAccount{
+ 
+    double amount; 
+    private double balance;
+public BankAccount(double intialamount){
+        if(intialamount>0.0){
+            balance =intialamount;
+        }}
+public void deposit(double amount){
+            if(amount>0.0){
+                balance += amount;}
+            }
+public  void withdraw(double amount){
+            if(amount>0.0 && amount <=balance){
+                balance -= amount;
+            }
+            else {
+                System.out.println("invalid amount");
+            }}
+public double getBalance(){
+    return balance;
+}
+  public static void main(String[] arg){
+    Scanner in = new Scanner(System.in);
+    BankAccount account = new BankAccount(100.0);
+    System.out.println("ENTER 1 FOR TO DEPOSITE THE AMOUNT ENTER 2 FOR TO WITHDRAWAMOUNT");
+int n = in.nextInt();
+    switch(n)
+    {
+        case 1:
+    System.out.println("Initial balance:" + account.getBalance());
+    System.out.println("Deposit Amount");
+     double a=in.nextDouble();
+    account.deposit(a);
+    System.out.println("Balance after deposit:" + account.getBalance());
+    break;
+    case 2:
+    System.out.println("Withdraw Amount");
+    double b=in.nextDouble();
+    account.withdraw(b);
+    System.out.println("Balance after withdrawal: " + account.getBalance());
+    account.withdraw(b); // This should show an error message
+    break;
+    
+    default:
+    System.out.println("Invalid option.");
+    break;
+  }  System.out.println("Final balance: " + account.getBalance());
+in.close();
+}
+}

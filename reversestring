@@ -1,0 +1,11 @@
+import java.util.*;
+class stringreverse {
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the String");
+             String word = scan.nextLine();
+
+String rev = new StringBuffer(word).reverse().toString();
+System.out.println(rev);
+    }}

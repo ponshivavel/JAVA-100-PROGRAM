@@ -1,0 +1,13 @@
+import java.util.*;
+class palindrome {
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the String");
+             String word = scan.nextLine();
+scan.close();
+String rev = new StringBuffer(word).reverse().toString();
+if(word.equals(rev)){
+System.out.println("IT IS PALINDROME");
+}
+    else{System.out.println("IT IS NOT PALINDROME");}}}
